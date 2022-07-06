@@ -10,14 +10,6 @@
       }
     },
     {
-      "type": "cutter",
-      "action": "remove",
-      "args": {
-        "wantedList": ["cn"],
-        "onlyIPType": "ipv4"
-      }
-    },
-    {
       "type": "text",
       "action": "add",
       "args": {
@@ -90,8 +82,8 @@
       "type": "maxmindMMDB",
       "action": "output",
       "args": {
-        "outputName": "Country-only-cn-private.mmdb",
-        "wantedList": ["cn", "private"]
+        "outputName": "Country-lite.mmdb",
+        "wantedList": ["cn", "private", "jp", "google", "netflix", "cmcc", "cuc", "ctc"]
       }
     },
     {
