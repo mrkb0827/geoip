@@ -95,7 +95,16 @@
       "action": "output",
       "args": {
         "outputName": "Country-lite.mmdb",
-        "wantedList": ["cn", "private", "jp", "google", "netflix", "cmcc", "cuc", "ctc"]
+        "wantedList": [
+          "cn",
+          "private",
+          "jp",
+          "google",
+          "netflix",
+          "cmcc",
+          "cuc",
+          "ctc"
+        ]
       }
     },
     {
