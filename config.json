@@ -75,7 +75,19 @@
       "type": "maxmindMMDB",
       "action": "output",
       "args": {
-        "outputName": "Country.mmdb"
+        "outputName": "Country.mmdb",
+        "overwriteList": [
+          "cn",
+          "private",
+          "cloudflare",
+          "cloudfront",
+          "facebook",
+          "fastly",
+          "google",
+          "netflix",
+          "telegram",
+          "twitter"
+        ]
       }
     },
     {
@@ -84,6 +96,23 @@
       "args": {
         "outputName": "Country-lite.mmdb",
         "wantedList": ["cn", "private", "jp", "google", "netflix", "cmcc", "cuc", "ctc"]
+      }
+    },
+    {
+      "type": "maxmindMMDB",
+      "action": "output",
+      "args": {
+        "outputName": "Country-asn.mmdb",
+        "wantedList": [
+          "cloudflare",
+          "cloudfront",
+          "facebook",
+          "fastly",
+          "google",
+          "netflix",
+          "telegram",
+          "twitter"
+        ]
       }
     },
     {
