@@ -95,7 +95,7 @@
       "action": "output",
       "args": {
         "outputName": "Country-lite.mmdb",
-        "overwriteList": [
+        "wantedList": [
           "cn",
           "jp",
           "private",
@@ -111,16 +111,13 @@
       "type": "maxmindMMDB",
       "action": "output",
       "args": {
-        "outputName": "Country-asn.mmdb",
+        "outputName": "Country-pico.mmdb",
         "wantedList": [
-          "cloudflare",
-          "cloudfront",
-          "facebook",
-          "fastly",
+          "cn",
+          "jp",
+          "private",
           "google",
-          "netflix",
-          "telegram",
-          "twitter"
+          "netflix"
         ]
       }
     },
