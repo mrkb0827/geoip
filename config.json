@@ -95,15 +95,15 @@
       "action": "output",
       "args": {
         "outputName": "Country-lite.mmdb",
-        "wantedList": [
+        "overwriteList": [
           "cn",
-          "private",
           "jp",
+          "private",
           "google",
           "netflix",
-          "cmcc",
+          "ctc",
           "cuc",
-          "ctc"
+          "cmcc"
         ]
       }
     },
