@@ -97,13 +97,15 @@
         "outputName": "Country-lite.mmdb",
         "wantedList": [
           "cn",
-          "jp",
-          "private",
-          "google",
-          "netflix",
           "ctc",
           "cuc",
-          "cmcc"
+          "cmcc",
+          "hk",
+          "sg",  
+          "jp",
+          "google",
+          "netflix",
+          "private"
         ]
       }
     },
@@ -115,9 +117,9 @@
         "wantedList": [
           "cn",
           "jp",
-          "private",
           "google",
-          "netflix"
+          "netflix",
+          "private"
         ]
       }
     },
