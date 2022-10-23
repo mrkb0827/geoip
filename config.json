@@ -32,65 +32,6 @@
   ],
   "output": [
     {
-      "type": "v2rayGeoIPDat",
-      "action": "output",
-      "args": {
-        "outputName": "geoip.dat"
-      }
-    },
-    {
-      "type": "v2rayGeoIPDat",
-      "action": "output",
-      "args": {
-        "outputName": "geoip-only-cn-private.dat",
-        "wantedList": ["cn", "private"]
-      }
-    },
-    {
-      "type": "v2rayGeoIPDat",
-      "action": "output",
-      "args": {
-        "outputName": "geoip-asn.dat",
-        "wantedList": [
-          "cloudflare",
-          "cloudfront",
-          "facebook",
-          "fastly",
-          "google",
-          "netflix",
-          "telegram",
-          "twitter"
-        ]
-      }
-    },
-    {
-      "type": "v2rayGeoIPDat",
-      "action": "output",
-      "args": {
-        "oneFilePerList": true,
-        "wantedList": ["cn", "private"]
-      }
-    },
-    {
-      "type": "maxmindMMDB",
-      "action": "output",
-      "args": {
-        "outputName": "Country.mmdb",
-        "overwriteList": [
-          "cn",
-          "private",
-          "cloudflare",
-          "cloudfront",
-          "facebook",
-          "fastly",
-          "google",
-          "netflix",
-          "telegram",
-          "twitter"
-        ]
-      }
-    },
-    {
       "type": "maxmindMMDB",
       "action": "output",
       "args": {
@@ -104,6 +45,9 @@
           "sg",  
           "jp",
           "google",
+          "fastly",
+          "cloudflare",
+          "cloudfront", 
           "netflix",
           "private"
         ]
@@ -118,6 +62,9 @@
           "cn",
           "jp",
           "google",
+          "fastly",
+          "cloudflare",
+          "cloudfront",          
           "netflix",
           "private"
         ]
