@@ -77,6 +77,8 @@
         "outputName": "Country-pico.mmdb",
         "wantedList": [
           "cn",
+          "hk",
+          "sg",  
           "jp",
           "google",
           "fastly",
