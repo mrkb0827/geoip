@@ -82,6 +82,7 @@
           "cloudflare",
           "cloudfront", 
           "netflix",
+          "sony",  
           "private"
         ]
       }
@@ -101,6 +102,7 @@
           "cloudflare",
           "cloudfront",          
           "netflix",
+          "sony",          
           "private"
         ]
       }
