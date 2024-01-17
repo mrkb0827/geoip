@@ -61,6 +61,13 @@
     {
       "type": "private",
       "action": "add"
+    },
+    {
+      "type": "text",
+      "action": "remove"
+      "args": {
+        "uri": "https://raw.githubusercontent.com/mrkb0827/china-operator-ip/master/operator/lz.txt"
+      }
     }
   ],
   "output": [
