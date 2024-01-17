@@ -66,7 +66,9 @@
       "type": "text",
       "action": "remove"
       "args": {
-        "uri": "https://raw.githubusercontent.com/mrkb0827/china-operator-ip/master/operator/lz.txt"
+        "name": "cn",
+        "uri": "https://raw.githubusercontent.com/mrkb0827/china-operator-ip/master/operator/lz.txt",
+        "onlyIPType": "ipv4"
       }
     }
   ],
