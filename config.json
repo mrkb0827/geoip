@@ -23,7 +23,7 @@
       "action": "add",
       "args": {
         "name": "cn",
-        "uri": "https://raw.githubusercontent.com/mrkb0827/china-operator-ip/ip-lists/china6.txt",
+        "uri": "https://raw.githubusercontent.com/mrkb0827/china-operator-ip/ip-lists/lz_all_cn_cidr6.txt",
         "onlyIPType": "ipv6"
       }
     },
