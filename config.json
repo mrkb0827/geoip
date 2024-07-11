@@ -10,10 +10,11 @@
       }
     },
     {
-      "type": "cutter",
-      "action": "remove",
+      "type": "maxmindMMDB",
+      "action": "add",
       "args": {
-        "wantedList": ["cn"],
+        "name": "cn",
+        "uri": "https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.mmdb",
         "onlyIPType": "ipv4"
       }
     },
@@ -22,25 +23,7 @@
       "action": "add",
       "args": {
         "name": "cn",
-        "uri": "https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt",
-        "onlyIPType": "ipv4"
-      }
-    },
-    {
-      "type": "text",
-      "action": "add",
-      "args": {
-        "name": "cn",
-        "uri": "https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china.txt",
-        "onlyIPType": "ipv4"
-      }
-    },
-    {
-      "type": "text",
-      "action": "add",
-      "args": {
-        "name": "cn",
-        "uri": "https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china6.txt",
+        "uri": "https://raw.githubusercontent.com/mrkb0827/china-operator-ip/ip-lists/lz_all_cn_cidr6.txt",
         "onlyIPType": "ipv6"
       }
     },
@@ -82,61 +65,25 @@
   ],
   "output": [
     {
-      "type": "v2rayGeoIPDat",
-      "action": "output",
-      "args": {
-        "outputName": "geoip.dat"
-      }
-    },
-    {
-      "type": "v2rayGeoIPDat",
-      "action": "output",
-      "args": {
-        "outputName": "geoip-only-cn-private.dat",
-        "wantedList": ["cn", "private"]
-      }
-    },
-    {
-      "type": "v2rayGeoIPDat",
-      "action": "output",
-      "args": {
-        "outputName": "geoip-asn.dat",
-        "wantedList": [
-          "cloudflare",
-          "cloudfront",
-          "facebook",
-          "fastly",
-          "google",
-          "netflix",
-          "telegram",
-          "twitter"
-        ]
-      }
-    },
-    {
-      "type": "v2rayGeoIPDat",
-      "action": "output",
-      "args": {
-        "oneFilePerList": true,
-        "wantedList": ["cn", "private"]
-      }
-    },
-    {
       "type": "maxmindMMDB",
       "action": "output",
       "args": {
-        "outputName": "Country.mmdb",
-        "overwriteList": [
+        "outputName": "Country-lite.mmdb",
+        "wantedList": [
           "cn",
-          "private",
-          "cloudflare",
-          "cloudfront",
-          "facebook",
-          "fastly",
+          "ctc",
+          "cuc",
+          "cmcc",
+          "hk",
+          "sg",  
+          "jp",
           "google",
+          "fastly",
+          "cloudflare",
+          "cloudfront", 
           "netflix",
-          "telegram",
-          "twitter"
+          "sony",  
+          "private"
         ]
       }
     },
@@ -144,24 +91,19 @@
       "type": "maxmindMMDB",
       "action": "output",
       "args": {
-        "outputName": "Country-only-cn-private.mmdb",
-        "wantedList": ["cn", "private"]
-      }
-    },
-    {
-      "type": "maxmindMMDB",
-      "action": "output",
-      "args": {
-        "outputName": "Country-asn.mmdb",
+        "outputName": "Country-pico.mmdb",
         "wantedList": [
-          "cloudflare",
-          "cloudfront",
-          "facebook",
-          "fastly",
+          "cn",
+          "hk",
+          "sg",  
+          "jp",
           "google",
+          "fastly",
+          "cloudflare",
+          "cloudfront",  
           "netflix",
-          "telegram",
-          "twitter"
+          "sony",          
+          "private"
         ]
       }
     },
